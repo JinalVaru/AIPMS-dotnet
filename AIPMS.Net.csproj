@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Keep the test project and old build output folders out of the web project's compilation. -->
+    <Compile Remove="tests/**" />
+    <Compile Remove="build-*/**" />
+    <Compile Remove="bin/**;obj/**" />
+    <Content Remove="tests/**" />
+    <Content Remove="build-*/**" />
+    <None Remove="tests/**" />
+    <None Remove="build-*/**" />
+  </ItemGroup>
+
+</Project>

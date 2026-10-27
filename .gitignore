@@ -1,0 +1,23 @@
+bin/
+obj/
+.vs/
+.vscode/
+TestResults/
+*.user
+*.suo
+*.log
+
+# Local databases and backups
+App_Data/*.db
+App_Data/*.db-wal
+App_Data/*.db-shm
+*.disabled
+D
+C
+C-wal
+C-shm
+
+# Secrets and local environment settings
+.env
+.env.*
+!.env.example
